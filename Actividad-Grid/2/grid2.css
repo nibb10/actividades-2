@@ -1,0 +1,55 @@
+
+.fila1 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1px));
+    margin-bottom: 10px;
+}
+
+.fila2 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(205px, 1px));
+    margin-bottom: 10px;
+}
+
+.fila3 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(415px,1px));
+    margin-bottom: 10px;
+}
+
+.fila4 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(625px, 1px));
+}
+
+body {
+    background-color: white;
+}
+
+.item {
+    background-color: #4bd1f3;
+    color: #4bd1f3;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .fila1{
+        grid-template-columns: repeat(auto-fill, minmax(1px, 100px));
+    }
+
+    .fila2{
+        grid-template-columns: repeat(auto-fill, minmax(1px, 205px));
+    }
+
+    .fila3{
+        grid-template-columns: repeat(auto-fill, minmax(1px, 415px));
+    }
+
+    .fila4{
+        grid-template-columns: repeat(auto-fill, minmax(1px, 625px));
+    }
+  }

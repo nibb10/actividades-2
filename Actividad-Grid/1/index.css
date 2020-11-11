@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    grid-template-rows: repeat(8, 40px);
+    gap: 1px;
+}
+
+body {
+    background-color: white;
+}
+
+.container > div {
+    background-color: rgb(16, 139, 43);
+}
+
+.item1, .item2, .item9, .item10{
+    grid-column: span 2;
+}
+
+.item3, .item6{
+    grid-row: span 6;
+}
+
+.item4, .item5, .item7, .item8{
+    grid-row: span 3;
+}
